@@ -1,0 +1,32 @@
+# ignore all unnecessary files in home
+/home/*
+!home/.bash_profile
+
+# ignore most files from cygwin
+/toolchain/cygwin64/*
+!toolchain/cygwin64/install-cygwin-px4.bat
+!toolchain/cygwin64/install-cygwin-setup-download.url
+!toolchain/cygwin64/install-cygwin-python-packages.bat
+
+# ignore most files from gcc-arm
+/toolchain/gcc-arm/*
+!toolchain/gcc-arm/install-gcc-arm.bat
+
+# ignore most files from jdk
+/toolchain/jdk/*
+!toolchain/jdk/install-jdk.bat
+
+# ignore most files from apache-ant
+/toolchain/apache-ant/*
+!toolchain/apache-ant/install-apache-ant.bat
+
+# ignore binary in genromfs
+/toolchain/genromfs/genromfs.exe
+
+# ignore all unnecessary files from installer generation
+/installer/*
+!installer/wix-binaries/
+/installer/wix-binaries/*
+!installer/wix-binaries/install-wix-binaries.bat
+!installer/wix-project/
+/installer/wix-project/build/*
